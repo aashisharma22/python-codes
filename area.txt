@@ -1,0 +1,12 @@
+class rect:
+	def __init__(self,l,b):
+		self.length=l
+		self.breadth=b
+		print(self.length,self.breadth)
+		
+	def area(self):
+		return self.length*self.breadth
+a=rect(10,300)
+b=rect(43,12)
+print('Area of rectangle a is ', a.area())
+print('Area of rectangle b is ', b.area())
