@@ -1,0 +1,11 @@
+class student:
+	def __init__(self,m1,m2,m3):
+		self.marks1=m1
+		self.marks2=m2
+		self.marks3=m3
+	def average(self):
+		return self.average=(self.marks1+self.marks2+self.marks3)/3
+s1=student(10,30,42)
+s2=student(21,32,43)
+print(s1.total())
+print(s2.total())
