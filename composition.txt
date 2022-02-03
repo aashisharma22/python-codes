@@ -1,0 +1,15 @@
+class mymarks:
+	def __init__(self,marks):
+		self.marks=marks
+	def __str__(self):
+		return str(self.marks)
+class mydetail:
+	def __init__(self,name,marks):
+		self.nam=name
+		
+		self.mark=mymarks(marks)
+	def __str__(self):
+		return "My name is " + self.nam +  " and I scored " + str(self.mark)
+a=mydetail('Aashish',97)
+print(a)
+	

@@ -1,0 +1,14 @@
+class A:
+	def __init__(self,n):
+		self.name=n
+	def __del__(self):
+		print('nothing')
+	def disp(self):
+		print('Name is: ',self.name)
+class B(A):
+	def __init__(self,i,j):
+		A.__init__(self,i)
+		self.marks=j
+	def __del__(self):
+		print('dtor')
+a1=A('abc')
