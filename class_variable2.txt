@@ -1,0 +1,19 @@
+class A:
+	branch='CSE'
+	def f1(self):
+		pass
+a1=A()
+b1=A()
+print(A.branch)	#CSE 
+print(a1.branch)	#CSE, variable called through object as well as class.
+print(b1.branch)	#CSE
+a1.branch='ECE'	#changing the branch of a1 through it's instance
+print(a1.branch)	#ece	
+print(b1.branch)	#cse
+print(A.branch)	#cse
+b1.branch='mech'
+print(b1.branch)	#mech
+A.branch='civil'
+print(A.branch)	#civil. This changes only the variable and doesn't affedt the object's variable value.
+print(a1.branch)	#ece
+print(b1.branch)	#mech
