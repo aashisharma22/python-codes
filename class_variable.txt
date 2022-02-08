@@ -1,0 +1,8 @@
+class student:
+	count=0   #class variable/static variable
+	def __init__(self):
+		student.count=student.count+1  #since it's a class variable, we invoke it before using it
+		print(student.count)
+a1=student()
+a2=student()
+print(a1.count)
